@@ -29,7 +29,21 @@ radio.onReceivedValue(function (name, value) {
             }
         }
     } else {
-        for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 3; index++) {
+            basic.showLeds(`
+                . # # # .
+                . # . . .
+                . # # # .
+                . # . . .
+                . # # # .
+                `)
+            basic.showLeds(`
+                . # # . .
+                . # . # .
+                . # # . .
+                . # . # .
+                . # . # .
+                `)
             basic.showLeds(`
                 . # # # .
                 . # . # .
@@ -38,18 +52,11 @@ radio.onReceivedValue(function (name, value) {
                 . # # # .
                 `)
             basic.showLeds(`
+                . # # . .
+                . # . # .
+                . # # . .
                 . # . # .
                 . # . # .
-                . # . # .
-                . # . # .
-                . . # . .
-                `)
-            basic.showLeds(`
-                . # # # .
-                . # . . .
-                . # # # .
-                . # . . .
-                . # # # .
                 `)
             basic.showLeds(`
                 . # # . .
