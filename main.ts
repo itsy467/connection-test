@@ -27,9 +27,11 @@ radio.onReceivedValue(function (name, value) {
             if (接続数 / 10 == 0) {
                 無線グループ += 1
             }
+        } else {
+            basic.showString("Reception strength is weak")
         }
     } else {
-        for (let index = 0; index < 3; index++) {
+        for (let index = 0; index < 2; index++) {
             basic.showLeds(`
                 . # # # .
                 . # . . .
